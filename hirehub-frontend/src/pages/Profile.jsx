@@ -61,7 +61,7 @@ function Profile() {
           Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify({
-          skills: skills.split(',').map(s => s.trim()),
+          skills: skills.split(',').map((s) => s.trim()),
           experience,
         }),
       });
@@ -87,32 +87,34 @@ function Profile() {
     navigate('/login');
   };
 
-  if (!profile) {
-    return <div className="profile-loading">{message || 'Loading...'}</div>;
-  }
+  if (!profile) return <div>{message || 'Loading...'}</div>;
 
   return (
     <div className="profile-container">
-      <h2>Your Profile</h2>
-      <p><strong>Name:</strong> {profile.name}</p>
+      <h2 className="profile-title">Welcome, {profile.name}!</h2>
       <p><strong>Email:</strong> {profile.email}</p>
       <p><strong>Role:</strong> {profile.role}</p>
 
-      <form onSubmit={handleUpdate}>
+      <hr className="divider" />
+
+      <h3>Update Profile</h3>
+      <form onSubmit={handleUpdate} className="profile-form">
         <label>Skills (comma separated):</label>
         <input
           type="text"
           value={skills}
-          onChange={e => setSkills(e.target.value)}
+          onChange={(e) => setSkills(e.target.value)}
           placeholder="e.g. JavaScript, React"
         />
+
         <label>Experience:</label>
         <textarea
           value={experience}
-          onChange={e => setExperience(e.target.value)}
+          onChange={(e) => setExperience(e.target.value)}
           placeholder="Describe your experience"
         />
-        <button type="submit">Update Profile</button>
+
+        <button type="submit">Save Changes</button>
       </form>
 
       {message && (
@@ -121,7 +123,14 @@ function Profile() {
         </p>
       )}
 
-      <button className="logout-btn" onClick={handleLogout}>Logout</button>
+      <div className="profile-actions">
+        {profile.role === 'employer' ? (
+          <button onClick={() => navigate('/job-post')}>Post a Job</button>
+        ) : (
+          <button onClick={() => navigate('/job-search')}>Search Jobs</button>
+        )}
+        <button onClick={handleLogout}>Logout</button>
+      </div>
     </div>
   );
 }

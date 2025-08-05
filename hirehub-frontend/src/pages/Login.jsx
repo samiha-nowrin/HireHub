@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../Login.css'; // Make sure path is correct
+import '../Login.css'; // Make sure this path is correct
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -27,13 +27,7 @@ function Login() {
 
       if (res.ok) {
         localStorage.setItem('token', data.token);
-
-        // Redirect based on role
-        if (data.user.role === 'employer') {
-          navigate('/job-post');
-        } else {
-          navigate('/job-search');
-        }
+        navigate('/profile'); // 🔁 Redirect to profile for all users
       } else {
         setMessage(data.message || 'Login failed');
       }
