@@ -1,0 +1,66 @@
+.home-container {
+  background: transparent;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3e3e3e;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #4a3f72;  /* dark purple */
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #3a2c55;
+  font-style: italic;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-buttons button {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  min-width: 120px;
+}
+
+/* Login button: ~35% darker shade */
+.home-buttons button:first-child {
+  background: #b9716d; /* darker than original */
+}
+
+.home-buttons button:first-child:hover {
+  background: #9e5c58;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Register button: ~35% darker shade */
+.home-buttons button:last-child {
+  background: #7a80a4;  /* darker than original */
+}
+
+.home-buttons button:last-child:hover {
+  background: #5f6582;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}

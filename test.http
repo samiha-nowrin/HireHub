@@ -1,0 +1,68 @@
+### Register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Nikita2",
+  "email": "nikita2@example.com",
+  "password": "123456",
+  "role": "jobseeker"
+}
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "nikita2@example.com",
+  "password": "123456"
+}
+
+### Get Profile
+GET http://localhost:5000/api/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODhmYWFkNGM5OGZlMGUwN2ZhYzVkZGYiLCJyb2xlIjoiam9ic2Vla2VyIiwiaWF0IjoxNzU0MjQ3MTQxLCJleHAiOjE3NTQyNTA3NDF9._rcEsabX1hETT6DUnTL9XMhA8Dk2laJhaZBBCn4H6t4
+
+###
+
+### Update Profile
+PUT http://localhost:5000/api/users/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODhmYWFkNGM5OGZlMGUwN2ZhYzVkZGYiLCJyb2xlIjoiam9ic2Vla2VyIiwiaWF0IjoxNzU0MjQ3MTQxLCJleHAiOjE3NTQyNTA3NDF9._rcEsabX1hETT6DUnTL9XMhA8Dk2laJhaZBBCn4H6t4
+
+{
+  "skills": ["JavaScript", "React"],
+  "experience": "1 year at Company"
+}
+
+
+### Add Job 1
+POST http://localhost:5000/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Frontend Developer",
+  "company": "ABC Corp",
+  "location": "Remote",
+  "description": "Looking for React developer",
+  "salary": 60000
+}
+
+### Add Job 2
+POST http://localhost:5000/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Backend Developer",
+  "company": "XYZ Inc",
+  "location": "New York",
+  "description": "Node.js experience required",
+  "salary": 70000
+}
+
+
+### Search jobs - Filter by title and location
+GET http://localhost:5000/api/jobs?title=developer&location=remote
+
+### Checking
+GET http://localhost:5000/api/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODhmZDE4NzMwZWRiMDVjMmQzYjAyZDQiLCJyb2xlIjoiZW1wb2... (paste your full token here)

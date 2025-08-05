@@ -1,0 +1,13 @@
+body, #root {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 188, 186, 0.8) 0%,    /* #F6BCBA + white */
+    rgba(227, 170, 221, 0.8) 25%,   /* #E3AADD + white */
+    rgba(200, 168, 233, 0.8) 50%,   /* #C8A8E9 + white */
+    rgba(195, 199, 244, 0.8) 75%,   /* #C3C7F4 + white */
+    rgba(246, 188, 186, 0.8) 100%
+  );
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

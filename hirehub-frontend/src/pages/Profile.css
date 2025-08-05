@@ -1,0 +1,105 @@
+.profile-container {
+  background: rgba(255, 255, 255, 0.88);
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3e3e3e;
+}
+
+.profile-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4a3f72;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container p {
+  font-size: 1rem;
+  margin: 8px 0;
+  font-weight: 500;
+  color: #5a507a;
+}
+
+.profile-container form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-container input,
+.profile-container textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid #c8a8e9;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+}
+
+.profile-container input:focus,
+.profile-container textarea:focus {
+  border-color: #7a80a4;
+  box-shadow: 0 0 8px #7a80a4aa;
+}
+
+.profile-container button {
+  background: #b9716d;
+  color: white;
+  padding: 14px 0;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.profile-container button:hover {
+  background-color: #9e5c58;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.message.success {
+  color: #28a745;
+}
+
+.message.error {
+  color: #dc3545;
+}
+
+.logout-btn {
+  margin-top: 25px;
+  background-color: #5c6bc0;
+  color: white;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: #3f51b5;
+}
+
+.profile-loading {
+  margin: 100px auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #5a507a;
+}

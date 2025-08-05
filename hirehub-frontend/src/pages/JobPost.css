@@ -1,0 +1,65 @@
+.jobpost-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jobpost-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4a3f72;
+}
+
+.jobpost-container label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #5a507a;
+}
+
+.jobpost-container input,
+.jobpost-container textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid #c8a8e9;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.jobpost-container input:focus,
+.jobpost-container textarea:focus {
+  border-color: #7a80a4;
+  box-shadow: 0 0 8px #7a80a4aa;
+}
+
+.jobpost-container button {
+  width: 100%;
+  background: #b9716d;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.jobpost-container button:hover {
+  background: #9e5c58;
+}
+
+.jobpost-container p {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #4a3f72;
+}

@@ -1,0 +1,98 @@
+/* Reuse the global background from index.css */
+
+.login-container {
+  background: rgba(255, 255, 255, 0.85); /* white with slight transparency */
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3e3e3e;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4a3f72;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-container label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #5a507a;
+}
+
+.login-container input {
+  padding: 12px 15px;
+  border: 1.5px solid #c8a8e9;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #7a80a4;
+  box-shadow: 0 0 8px #7a80a4aa;
+}
+
+.login-container button {
+  background: #b9716d;  /* same as login button on home */
+  color: white;
+  padding: 14px 0;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #9e5c58;
+}
+
+.login-container .register-link {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5a507a;
+}
+
+.login-container .register-link a {
+  color: #7a80a4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-container .register-link a:hover {
+  color: #5f6582;
+}
+
+.login-container select {
+  padding: 12px 15px;
+  border: 1.5px solid #c8a8e9;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: white;
+  color: #333;
+}
+
+.login-container select:focus {
+  border-color: #7a80a4;
+  box-shadow: 0 0 8px #7a80a4aa;
+}
